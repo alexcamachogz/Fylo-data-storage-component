@@ -1,0 +1,203 @@
+body {
+  background-image: url("../images/bg-mobile.png");
+  background-size: cover;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 50px);
+  justify-content: center;
+}
+.main {
+  background-color: #1d2c67;
+  border-radius: 10px;
+  border-top-right-radius: 100px;
+  height: 200px;
+  width: 325px;
+}
+.main-logo {
+  margin-bottom: 30px;
+  margin-left: 40px;
+  padding-top: 40px;
+}
+.main-buttons {
+  cursor: pointer;
+  display: flex;
+}
+.main-buttons>* {
+  background-color: #0c122c;
+  height: 50px;
+  line-height: 60px;
+  text-align: center;
+  width: 50px;
+  border-radius: 10px;
+}
+.main-file {
+  margin-left: 40px;
+}
+.main-folder {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.storage {
+  background-color: #1d2c67;
+  border-radius: 10px;
+  height: 160px;
+  margin: 20px auto;
+  width: 325px;
+}
+.storage-description {
+  padding-top: 30px;
+  text-align: center;
+}
+.storage-description span {
+  font-weight: 700;
+}
+.storage-use {
+  background-color: #141f4c;
+  border-radius: 50px;
+  height: 20px;
+  margin: 0 auto;
+  margin-top: 12px;
+  position: relative;
+  width: 250px;
+  text-align: center;
+}
+.storage-use::before {
+  background: linear-gradient(90deg, #ffa399 48%, #ff4d97 96%);
+  border-radius: 10px;
+  content: '';
+  display: block;
+  height: 14px;
+  left: 2px;
+  position: relative;
+  top: 3px;
+  width: 190px;
+}
+.storage-use::after {
+  background-color: #fff;
+  border-radius: 100%;
+  content: '';
+  display: block;
+  height: 12px;
+  left: 178px;
+  position: relative;
+  top: -10px;
+  width: 12px;
+}
+.storage-minmax {
+  display: flex;
+  font-weight: 700;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 250px;
+}
+.left {
+  color: #848794;
+  background-color: #fff;
+  border-radius: 10px;
+  font-weight: 700;
+  height: 75px;
+  line-height: 70px;
+  margin: 0 auto;
+  margin-top: 25px;
+  text-align: center;
+  width: 180px;
+}
+.left span {
+  color: #000;
+  font-size: 37px;
+  margin-right: 5px;
+}
+.attribution {
+  width: 100vw;
+  height: 50px;
+  line-height: 50px;
+  font-size: 12px;
+  text-align: center;
+  background-color: #dddbff;
+  color: #848794;
+}
+.attribution a {
+  text-decoration: none;
+  color: #0c122c;
+}
+.attribution a:hover {
+  text-decoration: underline;
+}
+@media screen and (min-width: 1440px) {
+  body {
+    background: url("../images/bg-desktop.png") bottom no-repeat;
+    background-size: contain;
+    background-color: #0c122c;
+  }
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 60%;
+    align-items: baseline;
+  }
+  .main {
+    margin: 0 auto;
+    position: relative;
+    top: 215px;
+  }
+  .storage {
+    height: 143px;
+    width: 490px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 235px;
+  }
+  .storage-description {
+    display: inline-block;
+    text-align: left;
+    width: 420px;
+  }
+  .storage-description span {
+    font-weight: 700;
+  }
+  .storage-use {
+    width: 420px;
+  }
+  .storage-use::before {
+    width: 317px;
+  }
+  .storage-use::after {
+    left: 305px;
+  }
+  .storage-minmax {
+    margin-top: 12px;
+    width: 420px;
+  }
+  .left {
+    height: 70px;
+    line-height: 65px;
+    position: relative;
+    top: -190px;
+    left: 130px;
+    width: 164px;
+  }
+  .left::before {
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right: 25px solid #fff;
+    content: '';
+    display: block;
+    height: 0;
+    position: absolute;
+    width: 0;
+    top: 45px;
+    left: 139px;
+  }
+}
