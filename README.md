@@ -9,6 +9,8 @@ This is a challenge from [Frontend-Mentor](https://www.frontendmentor.io/). I im
 ## 🚀 Getting Started
 Only you need download the project and open index.html. That's it.
 
+You can see the result here → [Data Storage Component](http://alejandra-camacho.me/Fylo-data-storage-component/)
+
 ## 🎨 Preview
 <details>
     <summary>🖥 Desktop version</summary>
