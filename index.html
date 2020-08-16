@@ -5,18 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png?">
-
-    <title>Frontend Mentor | Fylo data storage component</title>
+    <title>Fylo data storage component</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
-    You’ve used 815 GB of your storage 185 GB Left 0 GB 1000 GB
+    <div class="container">
+        <section class="main">
+            <div class="main-logo">
+                <img src="./images/logo.svg" alt="Logo">
+            </div>
+            <div class="main-buttons">
+                <div class="main-file">
+                    <img src="./images/icon-document.svg" alt="Document">
+                </div>
+                <div class="main-folder">
+                    <img src="./images/icon-folder.svg" alt="Folder">
+                </div>
+                <div class="main-upload">
+                    <img src="./images/icon-upload.svg" alt="Upload">
+                </div>
+            </div>
+        </section>
 
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/alexcamachogz" target="_blank">Alejandra Camacho Gz</a>.
+        <section class="storage">
+            <div class="storage-description">
+                You’ve used <span>815 GB</span> of your storage
+            </div>
+            <div class="storage-use">
+            </div>
+            <div class="storage-minmax">
+                <div class="min">
+                    0 GB
+                </div>
+                <div class="max">
+                    1000 GB
+                </div>
+            </div>
+            <div class="left">
+                <span>185</span> GB LEFT
+            </div>
+        </section>
     </div>
+
+    <footer class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/alexcamachogz" target="_blank">Alejandra Camacho Gz</a>.
+    </footer>
 </body>
 
 </html>
